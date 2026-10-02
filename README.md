@@ -4,7 +4,7 @@ Landing page untuk Faceless AI Creator — Vizex Studio.
 
 ## Struktur
 - `index.html` — landing page utama
-- `assets/images/` — seluruh gambar landing page
+- `assets/image/` — seluruh gambar landing page
 - `assets/icons/` — folder icon tambahan
 - `vercel.json` — konfigurasi deploy Vercel
 
