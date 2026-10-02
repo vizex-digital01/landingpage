@@ -2,7 +2,7 @@
 <html lang="id">
 <head>
 <meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
 <title>Faceless AI Creator — Vizex Studio</title>
 <meta name="description" content="Bikin konten kartun dan animasi AI faceless dari ide sampai siap produksi bersama Vizex Studio." />
 <style>
@@ -207,6 +207,337 @@ footer{padding:30px 0 50px;color:#816b5b;text-align:center}
   .proof-grid{grid-template-columns:repeat(2,1fr)}
 }
 
+
+/* === MOBILE-FIRST OPTIMIZATION === */
+@media (max-width: 768px) {
+  html, body {
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  body {
+    padding-bottom: 86px;
+  }
+
+  .container {
+    width: min(100% - 28px, 560px);
+  }
+
+  nav {
+    position: sticky;
+    top: 0;
+  }
+
+  .nav-inner {
+    padding: 11px 0;
+  }
+
+  .brand {
+    font-size: 21px;
+  }
+
+  .hero {
+    padding: 28px 0 24px;
+  }
+
+  .hero-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+  }
+
+  .hero-grid > div:first-child {
+    text-align: center;
+  }
+
+  .eyebrow {
+    font-size: 11px;
+    padding: 7px 10px;
+  }
+
+  h1 {
+    font-size: clamp(36px, 11vw, 52px);
+    line-height: 1.02;
+    letter-spacing: -1.9px;
+    margin: 14px 0 14px;
+  }
+
+  .hero p {
+    font-size: 16px;
+    line-height: 1.55;
+    margin-inline: auto;
+  }
+
+  .price-row {
+    justify-content: center;
+    gap: 8px 10px;
+    margin: 18px 0 14px;
+  }
+
+  .old {
+    font-size: 17px;
+  }
+
+  .new {
+    font-size: 42px;
+  }
+
+  .badge {
+    font-size: 11px;
+  }
+
+  .cta-wrap {
+    flex-direction: column;
+  }
+
+  .cta-wrap .btn {
+    width: 100%;
+  }
+
+  .small-note {
+    font-size: 12px;
+    line-height: 1.45;
+  }
+
+  .mini-proof {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    font-size: 11px;
+    line-height: 1.35;
+  }
+
+  .hero-card {
+    border-radius: 22px;
+    padding: 8px;
+    transform: none;
+  }
+
+  .hero-card img {
+    border-radius: 16px;
+  }
+
+  .section {
+    padding: 48px 0;
+  }
+
+  .section h2 {
+    font-size: 31px;
+    line-height: 1.08;
+    letter-spacing: -1px;
+  }
+
+  .section-lead {
+    font-size: 15px;
+    line-height: 1.6;
+  }
+
+  .problem-grid,
+  .feature-grid,
+  .steps-grid {
+    grid-template-columns: 1fr !important;
+    gap: 12px;
+    margin-top: 20px;
+  }
+
+  .card {
+    padding: 19px;
+    border-radius: 18px;
+  }
+
+  .card h3 {
+    font-size: 18px;
+  }
+
+  .card p {
+    font-size: 14px;
+  }
+
+  .showcase {
+    grid-template-columns: 1fr !important;
+    gap: 20px;
+    padding: 20px;
+    border-radius: 22px;
+  }
+
+  .avatar {
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+  .proof-wrap {
+    grid-template-columns: 1fr !important;
+    gap: 18px;
+  }
+
+  .proof-stat {
+    padding: 22px;
+    border-radius: 20px;
+  }
+
+  .proof-big {
+    font-size: 58px;
+  }
+
+  .proof-arrow {
+    font-size: 22px;
+  }
+
+  .proof-copy {
+    font-size: 14px;
+  }
+
+  .proof-grid {
+    grid-template-columns: 1fr 1fr !important;
+    gap: 8px;
+  }
+
+  .proof-shot {
+    border-radius: 14px;
+    aspect-ratio: 9 / 16;
+  }
+
+  .proof-shot img {
+    object-fit: cover;
+  }
+
+  .offer {
+    padding: 24px 18px;
+    border-radius: 22px;
+  }
+
+  .offer-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .price-box {
+    padding: 22px 16px;
+    border-radius: 20px;
+  }
+
+  .price-box .new {
+    font-size: 50px;
+  }
+
+  details {
+    padding: 16px;
+    border-radius: 15px;
+  }
+
+  summary {
+    font-size: 15px;
+  }
+
+  details p {
+    font-size: 14px;
+  }
+
+  footer {
+    padding-bottom: 110px;
+    font-size: 12px;
+  }
+
+  .sticky-mobile {
+    display: block !important;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+  }
+
+  .sticky-mobile .btn {
+    min-height: 56px;
+    font-size: 15px;
+    border-radius: 16px;
+  }
+}
+
+@media (max-width: 390px) {
+  .container {
+    width: min(100% - 22px, 560px);
+  }
+
+  h1 {
+    font-size: 34px;
+  }
+
+  .new {
+    font-size: 38px;
+  }
+
+  .section h2 {
+    font-size: 28px;
+  }
+
+  .proof-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .proof-shot {
+    aspect-ratio: auto;
+  }
+
+  .proof-shot img {
+    height: auto;
+  }
+}
+
+
+.monetize{
+  display:grid;
+  grid-template-columns:.9fr 1.1fr;
+  gap:28px;
+  align-items:center;
+  background:linear-gradient(135deg,#fff8ef,#f3e3cd);
+  border:1px solid rgba(86,43,13,.08);
+  border-radius:30px;
+  padding:30px;
+}
+.phone-shot{
+  background:#fff;
+  padding:10px;
+  border-radius:26px;
+  box-shadow:var(--shadow);
+  max-width:420px;
+  margin:auto;
+}
+.phone-shot img{
+  display:block;
+  width:100%;
+  border-radius:20px;
+}
+.flow{
+  display:flex;
+  flex-wrap:wrap;
+  gap:8px;
+  margin:20px 0;
+}
+.flow span{
+  background:#fff;
+  border:1px solid rgba(86,43,13,.08);
+  padding:9px 12px;
+  border-radius:999px;
+  font-weight:850;
+  font-size:13px;
+}
+.whatsapp-box{
+  margin-top:22px;
+  padding:18px;
+  border-radius:18px;
+  background:#fff;
+  border:1px solid rgba(86,43,13,.08);
+}
+.btn-wa{
+  background:#1f7a4f;
+  color:#fff;
+}
+@media(max-width:768px){
+  .monetize{
+    grid-template-columns:1fr;
+    padding:20px;
+    border-radius:22px;
+  }
+}
+
 </style>
 </head>
 <body>
@@ -343,6 +674,47 @@ footer{padding:30px 0 50px;color:#816b5b;text-align:center}
         <h3 style="font-size:30px;margin-top:12px;">Kelas Animasi Faceless</h3>
         <p style="color:#e6f0ea;">Bonus pendamping untuk membantu kamu memahami workflow dari ide sampai menjadi konten.</p>
         <a class="btn btn-primary" href="https://lynk.id/govizexly/kw443knm6006" target="_blank" style="margin-top:14px;">AMBIL AKSES + BONUS →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section" id="monetisasi">
+  <div class="container">
+    <div class="monetize">
+      <div class="phone-shot">
+        <img src="assets/image/lynk-earnings.png" alt="Contoh dashboard Lynk VizexDigital">
+      </div>
+      <div>
+        <div class="eyebrow">💸 MONETIZATION FLOW</div>
+        <h2 style="margin-top:16px;">Bukan Cuma Bikin Konten. Kamu Juga Bisa Mulai Monetisasi.</h2>
+        <p class="section-lead">Konten faceless bisa jadi langkah awal untuk membangun audience lalu mengarahkannya ke sistem jualan digital yang lebih rapi.</p>
+
+        <div class="flow">
+          <span>💡 Konten</span>
+          <span>→</span>
+          <span>👥 Audience</span>
+          <span>→</span>
+          <span>🔗 Lynk</span>
+          <span>→</span>
+          <span>💻 Produk Digital</span>
+        </div>
+
+        <div class="checks">
+          <div class="check"><span>✓</span><div><b>Bikin konten faceless lebih terarah</b> Mulai dari ide sampai siap diproduksi.</div></div>
+          <div class="check"><span>✓</span><div><b>Bangun audience secara konsisten</b> Tanpa harus tampil muka di depan kamera.</div></div>
+          <div class="check"><span>✓</span><div><b>Arahkan ke link jualan</b> Gunakan halaman seperti Lynk.id untuk menampilkan produk digital.</div></div>
+          <div class="check"><span>✓</span><div><b>Mulai monetisasi</b> Bangun aset digital dan peluang penghasilan secara bertahap.</div></div>
+        </div>
+
+        <div class="small-note" style="margin-top:14px;">Contoh pada gambar adalah dokumentasi dashboard milik VizexDigital. Hasil setiap orang dapat berbeda tergantung konsistensi, kualitas konten, penawaran, dan eksekusi.</div>
+
+        <div class="whatsapp-box">
+          <b>Masih ada yang mau ditanyakan?</b>
+          <p style="margin:6px 0 14px;color:#765b47;">Chat langsung dulu sebelum beli. Kami bantu jawab pertanyaan seputar tools, akses, dan cara mulainya.</p>
+          <a class="btn btn-wa" href="https://wa.me/6289602897243?text=Halo%2C%20saya%20tertarik%20dengan%20Faceless%20AI%20Creator%20%E2%80%94%20Vizex%20Studio%2E%20Saya%20masih%20ada%20beberapa%20pertanyaan%20sebelum%20membeli%2E" target="_blank">💬 TANYA VIA WHATSAPP</a>
+        </div>
       </div>
     </div>
   </div>

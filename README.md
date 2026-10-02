@@ -18,3 +18,7 @@ Landing page untuk Faceless AI Creator — Vizex Studio.
 ## Checkout
 CTA utama sudah diarahkan ke:
 https://lynk.id/govizexly/kw443knm6006
+
+
+## WhatsApp
+Nomor bantuan: +6289602897243
